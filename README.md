@@ -1,6 +1,6 @@
-# Wirement Profile — A Comprehensive Laravel Profile Management Package
+# Wirement Profile — A Filament v4 Profile Management Package
 
-A modern Laravel package for profile management with built-in two-factor authentication, passkey support, and team management for Filament panels.
+A modern Filament v4 package for profile management with built-in two-factor authentication, passkey support, and team management for Filament panels.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/wirement/wirement-profile.svg?style=flat-square)](https://packagist.org/packages/wirement/wirement-profile)
 [![Total Downloads](https://img.shields.io/packagist/dt/wirement/wirement-profile.svg?style=flat-square)](https://packagist.org/packages/wirement/wirement-profile)
@@ -253,7 +253,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Wirement](https://insidenext.no) - Digital innovation and modern solutions
+- [Knut W. Horne](https://kwhorne.com) - Writer, Creator, Developer
 - [taylorotwell](https://github.com/taylorotwell) - Laravel framework
 - [All Contributors](../../contributors)
 
