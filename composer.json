@@ -1,0 +1,77 @@
+{
+    "name": "wirement/wirement-profile",
+    "description": "A comprehensive Laravel profile management package with two-factor authentication for Filament panels.",
+    "keywords": [
+        "wirement",
+        "laravel",
+        "package",
+        "filament",
+        "profile",
+        "two-factor-authentication",
+        "2fa",
+        "passkey"
+    ],
+    "homepage": "https://github.com/kwhorne/wirement-profile",
+    "support": {
+        "issues": "https://github.com/kwhorne/wirement-profile/issues",
+        "source": "https://github.com/kwhorne/wirement-profile"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kwhorne",
+            "email": "kh@gets.no",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^4.0",
+        "illuminate/contracts": "^11.28",
+        "mobiledetect/mobiledetectlib": "^4.8",
+        "spatie/laravel-package-tools": "^1.15.0",
+        "spatie/laravel-passkeys": "^1.0",
+        "pragmarx/google2fa": "^8.0",
+        "bacon/bacon-qr-code": "^2.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^8.0",
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-arch": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wirement\\Profile\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wirement\\Profile\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wirement\\Profile\\WirementProfileServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

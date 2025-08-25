@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+  --color-primary-950: #1e1b4b;
+}
+
+/* Wirement Profile Custom Styles */
+
+body {
+  font-family: 'Inter', 'SF Pro Display', system-ui, sans-serif;
+}
+
+/* Component Styles */
+.wirement-card {
+  background-color: white;
+  box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+}
+
+.dark .wirement-card {
+  background-color: rgb(17 24 39);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.wirement-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  transition: colors 150ms;
+}
+
+.wirement-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+}
+
+.wirement-button-primary {
+  background-color: var(--color-primary-600);
+  color: white;
+}
+
+.wirement-button-primary:hover {
+  background-color: var(--color-primary-700);
+}
+
+.wirement-button-secondary {
+  background-color: rgb(243 244 246);
+  color: rgb(17 24 39);
+}
+
+.wirement-button-secondary:hover {
+  background-color: rgb(229 231 235);
+}
+
+.dark .wirement-button-secondary {
+  background-color: rgb(31 41 55);
+  color: rgb(243 244 246);
+}
+
+.dark .wirement-button-secondary:hover {
+  background-color: rgb(55 65 81);
+}
+
+.wirement-input {
+  display: block;
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 0;
+  padding: 0.625rem 0.75rem;
+  color: rgb(17 24 39);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid rgb(209 213 219);
+}
+
+.wirement-input::placeholder {
+  color: rgb(156 163 175);
+}
+
+.wirement-input:focus {
+  border-color: var(--color-primary-600);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.dark .wirement-input {
+  background-color: rgb(31 41 55);
+  color: rgb(243 244 246);
+  border-color: rgb(75 85 99);
+}
+
+.dark .wirement-input::placeholder {
+  color: rgb(107 114 128);
+}
+
+.wirement-2fa-qr {
+  padding: 1.5rem;
+  background-color: white;
+  border: 1px solid rgb(229 231 235);
+  border-radius: 1rem;
+  box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+}
+
+.dark .wirement-2fa-qr {
+  background-color: rgb(31 41 55);
+  border-color: rgb(75 85 99);
+}
+
+.wirement-recovery-code {
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(229 231 235);
+  text-align: center;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", monospace;
+  font-size: 0.875rem;
+}
+
+.dark .wirement-recovery-code {
+  background-color: rgb(31 41 55);
+  border-color: rgb(75 85 99);
+  color: rgb(243 244 246);
+}
+
+.wirement-passkey-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgb(249 250 251);
+  border-radius: 0.75rem;
+}
+
+.dark .wirement-passkey-item {
+  background-color: rgb(31 41 55);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
